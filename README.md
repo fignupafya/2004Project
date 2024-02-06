@@ -13,11 +13,11 @@ Welcome to the KidHub App, designed to assist dyslexic children with learning an
   - Texts and images tailored to specific topics.
   - Dynamic animations and background changes to enhance learning.
 - **Gaming Section:** Includes several engaging games:
-  1. Memorization
-  2. Reversed Memorization
-  3. Finding Similars
-  4. Tracking the Ball
-  5. Correct Word Writing
+  * Memorization
+   Reversed Memorization
+  * Finding Similars
+  * Tracking the Ball
+  * Correct Word Writing
 - **Language Options:** Users can change the language within the app, adjusting all text and images accordingly.
 
 ## Installation
