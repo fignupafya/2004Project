@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/correct_word_bg"
+    tools:context=".correct_word">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_correct_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B2B1C2D1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/correct_word_img"
+        android:layout_width="324dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_correct_word"
+        app:srcCompat="@drawable/correct_word_1" />
+
+    <EditText
+        android:id="@+id/text_box_word"
+        android:layout_width="297dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="20dp"
+        android:background="#224A4A4A"
+        android:ems="10"
+        android:hint="How to write this?"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#232323"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correct_word_img" />
+
+    <Button
+        android:id="@+id/correct_word_button"
+        android:layout_width="156dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:onClick="ok"
+        android:text="OK"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_box_word" />
+
+    <ImageView
+        android:id="@+id/tick_word"
+        android:layout_width="125dp"
+        android:layout_height="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_correct_word"
+        app:srcCompat="@drawable/tick"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/cross_word"
+        android:layout_width="148dp"
+        android:layout_height="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_correct_word"
+        app:srcCompat="@drawable/cross"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

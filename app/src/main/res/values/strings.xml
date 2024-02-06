@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">KidHub</string>
+    <string name="clock_1">Read an analog clock can be fun and easy! \n\nHere\'s a simple way to understand it</string>
+    <string name="clock_2">Look at the big hand: \nThe big hand on the clock is called the minute hand. \n\nIt tells you the minutes. \n\nWhen the minute hand points at the 12,\n\nit means it\'s the start of a new hour.</string>
+    <string name="clock_3">Understand the small hand: \nThe small hand on the clock is called the hour hand. \n\nIt tells you the hour. \n\nThe hour hand moves slower than the minute hand.</string>
+    <string name="clock_4">Connect the dots: \nTo read the time, first, look at the hour hand.\n\nSee which number it\'s pointing to or closest to. \n\nThis will tell you the hour. \n\nRemember that each number represents an hour.</string>
+    <string name="clock_5">Count the minutes:\nNext, look at the minute hand. \n\nSee which number it\'s pointing to or closest to. \n\nThis will tell you the minutes. \n\nRemember that each number represents five minutes.</string>
+    <string name="clock_6">Combine the information: \nNow you know the hour from the hour hand and the minutes from the minute hand.\n\nPut them together to read the time.\n\nFor example, if the hour hand is pointing at 2 \n\nand the minute hand is pointing at 10,\n\nit means it\'s 2:10.</string>
+    <string name="clock_7">Let\'s learn how to read a digital clock!</string>
+    <string name="clock_8">Look at the hour:\nThe first two digits on a digital clock represent the hour.\n\nThey show the current hour in a 24-hour format \n\nor a 12-hour format with an "AM" or "PM" indicator.</string>
+    <string name="clock_9">Check the minutes:\nThe last two digits on the digital clock display indicate the minutes.\n\nThey show the current number of minutes past the hour.</string>
+    <string name="clock_10">Understand the separators:\nIn between the hour and minutes,\n\nyou may see a colon (:) or a dot (.) as a separator.\n\nIt helps distinguish between the hour and the minutes.</string>
+    <string name="clock_11">Read the time: \nSimply combine the digits for the hour and the minutes to determine the current time.\n\nFor example, if the clock displays "07:30,"\n\nit means it\'s 7:30 AM or PM,\ndepending on the format used.</string>
+    <string name="clock_12">That\'s it! \nNow you know how to read Analog and Digital Clocks! \n\n Let\'s see some examples :</string>
+    <string name="clock_13">Blank</string>
+    <string name="clock_14">Blank</string>
+    <string name="tr_clock_1">Analog bir saati okumak eğlenceli ve kolay olabilir! \n\nİşte anlamak için basit bir yöntem</string>
+    <string name="tr_clock_2">Büyük ibreye bak: \nSaatteki büyük ibre dakika ibresi olarak adlandırılır. \n\nBu ibre dakikaları gösterir. \n\nDakika ibresi 12\'yi gösterdiğinde,\n\nyeni bir saat başladığı anlamına gelir.</string>
+    <string name="tr_clock_3">Küçük ibreyi anla: \nSaatteki küçük ibre saat ibresi olarak adlandırılır. \n\nBu ibre saati gösterir. \n\nSaat ibresi dakika ibresinden daha yavaş hareket eder.</string>
+    <string name="tr_clock_4">Noktaları birleştir: \nSaatleri okumak için önce saat ibresine bak.\n\nHangi numaraya işaret ettiğine veya en yakın olduğuna bak. \n\nBu saati söyler. \n\nHer numaranın bir saati temsil ettiğini unutma.</string>
+    <string name="tr_clock_5">Dakikaları say: \nSonra dakika ibresine bak. \n\nHangi numaraya işaret ettiğine veya en yakın olduğuna bak. \n\nBu dakikaları söyler. \n\nHer numaranın beş dakikayı temsil ettiğini unutma.</string>
+    <string name="tr_clock_6">Bilgileri birleştir: \nŞimdi saat ibresinden saati ve dakika ibresinden dakikayı biliyorsun.\n\nBunları birleştirerek saati oku.\n\nÖrneğin, saat ibresi 2\'yi gösteriyorsa \n\nve dakika ibresi 10\'u gösteriyorsa,\n\nsaat 2:10 olduğunu gösterir.</string>
+    <string name="tr_clock_7">Şimdi dijital bir saati nasıl okuyacağımızı öğrenelim!</string>
+    <string name="tr_clock_8">Saat ibresine bak: \nDijital bir saatin ilk iki rakamı saati temsil eder.\n\nBu rakamlar, 24 saatlik bir formatta \n\nveya "AM" veya "PM" göstergesi ile 12 saatlik bir formatta \n\nmevcut saati gösterir.</string>
+    <string name="tr_clock_9">Dakikaları kontrol et: \nDijital saat ekranındaki son iki rakam dakikaları gösterir.\n\nBu rakamlar, saat başından itibaren geçen dakikaların sayısını gösterir.</string>
+    <string name="tr_clock_10">Ayırıcıları anla: \nSaat ve dakikalar arasında bir iki nokta (:) veya nokta (.) görebilirsin.\n\nBu, saati ve dakikaları ayırt etmene yardımcı olur.</string>
+    <string name="tr_clock_11">Zamanı oku: \nBasitçe saat ve dakika rakamlarını birleştirerek mevcut saati belirle.\n\nÖrneğin, saat "07:30" olarak gözüküyorsa,\n\nkullanılan formata bağlı olarak,\nbu sabah 7:30 veya akşam 7:30 olduğunu gösterir.</string>
+    <string name="tr_clock_12">İşte bu kadar! \nŞimdi Analog ve Dijital Saatleri nasıl okuyacağını biliyorsun! \n\n Hadi örneklere bakalım :</string>
+    <string name="tr_clock_13">Boş</string>
+    <string name="tr_clock_14">Boş</string>
+
+
+    <string name="days_1">Lets learn days of the week!</string>
+    <string name="days_2">1. Monday</string>
+    <string name="days_3">2. Tuesday</string>
+    <string name="days_4">3. Wednesday</string>
+    <string name="days_5">4. Thursday</string>
+    <string name="days_6">5. Friday</string>
+    <string name="days_7">6. Saturday</string>
+    <string name="days_8">7. Sunday</string>
+    <string name="days_9">That\'s it! \nNow you know days of the week! \n\nKeep learning!</string>
+    <string name="tr_days_1">Hadi günleri öğrenelim!</string>
+    <string name="tr_days_2">1. Pazartesi</string>
+    <string name="tr_days_3">2. Salı</string>
+    <string name="tr_days_4">3. Çarşamba</string>
+    <string name="tr_days_5">4. Perşembe</string>
+    <string name="tr_days_6">5. Cuma</string>
+    <string name="tr_days_7">6. Cumartesi</string>
+    <string name="tr_days_8">7. Pazar</string>
+    <string name="tr_days_9">İşte bu \nArtık günleri biliyorsun!\n\nÖğrenmeye devam et!</string>
+
+    <string name="multiplication_1">Let\'s learn multiplication!!</string>
+    <string name="multiplication_2">Look at the problem and read it carefully.</string>
+    <string name="multiplication_3">Understand the meaning of the \n"times" symbol \n\nor the "x" symbol, \n\nwhich tells you to multiply.</string>
+    <string name="multiplication_5">Count the first number in the problem. \n\nThis number tells you how many objects are in each group.</string>
+    <string name="multiplication_4">Count the second number in the problem. \n\nThis number represents how many groups \nor sets you have.</string>
+    <string name="multiplication_6">Start counting by the first number. \nFor example, if you have 7 objects in each group,\n\n start counting by 7: \n7, 14, 21, 28.</string>
+    <string name="multiplication_7">When you finish counting, \n\nthe last number you said is the answer to the problem. \n\nThat is your final answer. \n\nIn this case, \n\nthe answer is 28!</string>
+    <string name="multiplication_8">Let\'s visualize it!</string>
+    <string name="multiplication_9">Blank</string>
+    <string name="tr_multiplication_1">Çarpımı öğrenelim!!</string>
+    <string name="tr_multiplication_2">Probleme dikkatlice bakın ve onu okuyun.</string>
+    <string name="tr_multiplication_3">"Çarpma" sembolünün veya "x" sembolünün anlamını anlayın,\nbu semboller size çarpmayı bildirir.</string>
+    <string name="tr_multiplication_5">Problemin ilk numarasını sayın.\nBu numara her bir grup içindeki nesnelerin sayısını belirtir.</string>
+    <string name="tr_multiplication_4">Problemin ikinci numarasını sayın.\nBu numara kaç grup veya takımınız olduğunu temsil eder.</string>
+    <string name="tr_multiplication_6">İlk numarayla saymaya başlayın.\nÖrneğin, her bir grupta 7 nesneniz varsa,\n7 ile saymaya başlayın: \n7, 14, 21, 28.</string>
+    <string name="tr_multiplication_7">Saymayı bitirdiğinizde,\ndediğiniz son numara problemin cevabıdır.\nBu, son cevabınızdır.\nBu durumda,\ncevap 28\'dir!</string>
+    <string name="tr_multiplication_8">Biraz de örneğe bakalım!</string>
+    <string name="tr_multiplication_9">Boş</string>
+
+
+</resources>

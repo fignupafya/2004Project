@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp_8"
+    tools:context=".days_education">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8A61ADC8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/days_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="back_days"
+        android:textColorLink="#D31111"
+        app:icon="@android:drawable/ic_media_rew"
+        app:iconPadding="0dp"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/days_image_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/days_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:onClick="forw"
+        android:textAlignment="center"
+        app:icon="@android:drawable/ic_media_ff"
+        app:iconPadding="0dp"
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/days_button_1" />
+
+    <ImageView
+        android:id="@+id/days_image_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="30dp"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        app:layout_constraintBottom_toTopOf="@+id/rover_days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectanglespeechbubble" />
+
+    <ImageView
+        android:id="@+id/rover_days"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="-20dp"
+        android:onClick="rover_func"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rover" />
+
+    <ScrollView
+        android:id="@+id/days_scroll"
+        android:layout_width="339dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="@+id/days_image_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/days_image_1"
+        app:layout_constraintVertical_bias="0.122">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/days_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="7"
+                android:text="@string/days_1"
+                android:textColor="#00FF0A"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

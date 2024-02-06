@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_wp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="254dp"
+        android:layout_height="193dp"
+        android:layout_marginBottom="45dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/userid_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Password"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginpassword"
+        app:layout_constraintStart_toStartOf="@+id/loginpassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="153dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="login"
+        android:rotation="-2"
+        android:rotationX="10"
+        android:shadowColor="#FF0000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="20"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#454444"
+        app:strokeWidth="1dp" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/loginuserid"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/userid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Username"
+        android:textColor="#F7FF00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginuserid"
+        app:layout_constraintStart_toStartOf="@+id/loginuserid" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="277dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="register"
+        android:rotation="1"
+        android:rotationX="-10"
+        android:shadowColor="#27DA2E"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="20"
+        android:text="Don't you have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#454444"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/Appnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#DFDFDF"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6"
+        android:text="KidHub"
+        android:textColor="#333333"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wrongtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="7"
+        android:text="Incorrect Userid or Password"
+        android:textColor="#FF0000"
+        android:textColorHighlight="#FF0000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpassword" />
+
+    <TextView
+        android:id="@+id/lang_text"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:onClick="change_lang"
+        android:rotation="-25"
+        android:shadowColor="#0B67B5"
+        android:shadowDx="-5"
+        android:shadowDy="5"
+        android:shadowRadius="4"
+        android:text="EN"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="70dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:onClick="change_lang"
+        android:rotation="25"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.251"
+        app:srcCompat="@drawable/_48_1489428_language_bubble_clip_art_hd_png_download" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:onClick="change_lang"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:srcCompat="@drawable/language_main" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

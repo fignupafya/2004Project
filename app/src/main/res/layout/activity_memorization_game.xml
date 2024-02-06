@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mem_wallpaper"
+    tools:context=".memorization_game">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_memorization_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4FEF9F3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#000000"
+        app:titleTextColor="#000000" />
+
+    <TextView
+        android:id="@+id/rev_mem_textbox"
+        android:layout_width="285dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="120dp"
+        android:shadowColor="#515151"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="8"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="96sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_memorization_game" />
+
+    <EditText
+        android:id="@+id/mem_num_box"
+        android:layout_width="221dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rev_mem_textbox"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/mem_game_buttonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="evaluate"
+        android:text="OK"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mem_num_box" />
+
+    <ImageView
+        android:id="@+id/mem_tick"
+        android:layout_width="119dp"
+        android:layout_height="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_memorization_game"
+        app:srcCompat="@drawable/tick"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mem_cross"
+        android:layout_width="94dp"
+        android:layout_height="117dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_memorization_game"
+        app:srcCompat="@drawable/cross"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

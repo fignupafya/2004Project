@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.2004Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".similarities_game"
+            android:exported="false"
+            android:label="Similarity Game"/>
+        <activity
+            android:name=".correct_word"
+            android:exported="false"
+            android:label="Word Game" />
+        <activity
+            android:name=".reversed_memorization_game"
+            android:exported="false"
+            android:label="Reversed Memorization Game" />
+        <activity
+            android:name=".memorization_game"
+            android:exported="false"
+            android:label="Memorization Game" />
+        <activity
+            android:name=".ball_track_game"
+            android:exported="false"
+            android:label="Track The Ball" />
+        <activity
+            android:name=".seasons"
+            android:exported="false"
+            android:label="Seasons" />
+        <activity
+            android:name=".ball_track"
+            android:exported="false"
+            android:label="Track The Ball" />
+        <activity
+            android:name=".similarities"
+            android:exported="false"
+            android:label="Similarity Game" />
+        <activity
+            android:name=".word_game"
+            android:exported="false"
+            android:label="Word Game" />
+        <activity
+            android:name=".reversed_memorization"
+            android:exported="false"
+            android:label="Reversed memorization" />
+        <activity
+            android:name=".memorization"
+            android:exported="false"
+            android:label="Memorization" />
+        <activity
+            android:name=".multiplication_education"
+            android:exported="false"
+            android:label="Multiplication" />
+        <activity
+            android:name=".months"
+            android:exported="false"
+            android:label="Months" />
+        <activity
+            android:name=".directions"
+            android:exported="false"
+            android:label="Directions" />
+        <activity
+            android:name=".days_education"
+            android:exported="false"
+            android:label="Days" />
+        <activity
+            android:name=".clock_education"
+            android:exported="false"
+            android:label="Clocks" />
+        <activity
+            android:name=".game_main"
+            android:exported="false"
+            android:label="Games" />
+        <activity
+            android:name=".learn_main"
+            android:exported="false"
+            android:label="Learn" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false"
+            android:label="Home" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:label="Register" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

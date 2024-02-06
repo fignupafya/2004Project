@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reversed_mem_wp"
+    tools:context=".reversed_memorization">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView_reversed_memorization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="168dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="Reversed Memorization"
+            android:textAlignment="center"
+            android:textColor="#F40000"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.645"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_reversed_memorization_2"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="Remember the digits shown on the screen from the beginning to the end in reverse order"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_reversed_memorization" />
+
+        <Button
+            android:id="@+id/button_reversed_memorization"
+            android:layout_width="134dp"
+            android:layout_height="67dp"
+            android:onClick="start"
+            android:text="START"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_reversed_memorization_2"
+            app:layout_constraintVertical_bias="0.767" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="347dp"
+            android:layout_height="155dp"
+            android:rotationX="180"
+            app:layout_constraintBottom_toTopOf="@+id/button_reversed_memorization"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_reversed_memorization_2"
+            app:srcCompat="@drawable/reversed_memorizationgame" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_reversed_memorization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C004AB6"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#FF0000"
+        app:titleTextColor="#FF0000" />
+</androidx.constraintlayout.widget.ConstraintLayout>

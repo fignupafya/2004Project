@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp_5"
+    tools:context=".months">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_months"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99DACAC0"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/months_top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#C3BBBB"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Let's learn months!"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_months" />
+
+
+    <Button
+        android:id="@+id/months_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="back"
+        app:icon="@android:drawable/ic_media_rew"
+        app:iconPadding="0dp"
+        app:iconSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/months_top_text" />
+
+    <Button
+        android:id="@+id/months_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="forw"
+        android:textAlignment="center"
+        app:icon="@android:drawable/ic_media_ff"
+        app:iconPadding="0dp"
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/months_top_text" />
+
+    <ImageView
+        android:id="@+id/months_image_1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:scaleX="0.95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/months_button_2"
+        app:srcCompat="@drawable/rectanglespeechbubble" />
+
+    <ImageView
+        android:id="@+id/rover_months"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginBottom="-20dp"
+        android:onClick="rover_func"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rover" />
+
+    <ScrollView
+        android:id="@+id/months_scroll"
+        android:layout_width="336dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="@+id/months_image_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/months_image_1"
+        app:layout_constraintVertical_bias="0.25">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/months_img"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                app:srcCompat="@drawable/months_1" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

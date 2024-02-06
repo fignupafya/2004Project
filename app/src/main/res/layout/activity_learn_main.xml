@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp_4"
+    tools:context=".learn_main">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#926D7B81"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#00DDFF"
+        app:titleTextColor="#00DDFF" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="312dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learn_main_top_text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#BAEFE2"
+                android:onClick="clock"
+                app:srcCompat="@drawable/clock" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#BAEFE2"
+                android:onClick="directions"
+                app:srcCompat="@drawable/directions" />
+
+            <ImageView
+                android:id="@+id/learn_main_days"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#BAEFE2"
+                android:onClick="days"
+                app:srcCompat="@drawable/days" />
+
+            <ImageView
+                android:id="@+id/calendar_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#BAEFE2"
+                android:onClick="months"
+                app:srcCompat="@drawable/months" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#BAEFE2"
+                android:onClick="multiplication"
+                app:srcCompat="@drawable/multiplication" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#BAEFE2"
+                android:onClick="seasons"
+                app:srcCompat="@drawable/seasons" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/rover_learn_main"
+        android:layout_width="132dp"
+        android:layout_height="127dp"
+        android:onClick="rover_func"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rover" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="417dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginBottom="50dp"
+        android:rotation="-37"
+        app:layout_constraintBottom_toBottomOf="@+id/rover_learn_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bubble" />
+
+    <TextView
+        android:id="@+id/learn_main_rover_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-37"
+        android:shadowColor="#FFEB3B"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="What do you \nwant to learn?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="@+id/imageView22"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <TextView
+        android:id="@+id/learn_main_top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Let's learn together!!"
+        android:textColor="#F45088"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
