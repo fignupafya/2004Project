@@ -2,6 +2,8 @@
 
 Welcome to the KidHub App, designed to assist dyslexic children with learning and gaming in a fun and engaging way.
 
+![readme image](readme.gif)
+
 ## Features
 
 - **Login/Register System:** Users can create accounts and log in to access personalized sessions.
